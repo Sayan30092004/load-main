@@ -1,6 +1,21 @@
-# React + TypeScript + Vite
+# Load Forecaster
+React + Typescripte + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
+
+Load Forecaster is a web-based application that predicts blackout probability for specific locations. It integrates a flat world map focused on West Bengal and uses AI-driven analysis to estimate the likelihood of power outages.
+
+# Features
+
+Blackout Prediction: Provides real-time probability estimates of blackouts for selected locations.
+
+Integrated Map: Displays a flat world map centered on West Bengal for easy location selection.
+
+AI-Powered Forecasting: Uses machine learning models to analyze power grid data and predict outages.
+
+User-Friendly Interface: Simple and intuitive UI for seamless interaction.
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLinthttps://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax rules.
 
 Currently, two official plugins are available:
 
