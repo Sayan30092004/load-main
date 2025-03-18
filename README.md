@@ -4,6 +4,7 @@ React + Typescripte + Vite
 # Overview
 
 Load Forecaster is a web-based application that predicts blackout probability for specific locations. It integrates a flat world map focused on West Bengal and uses AI-driven analysis to estimate the likelihood of power outages.
+
 ![LP](https://github.com/user-attachments/assets/e9d07046-885c-42fc-b352-e614e29d99b9)
 
 # Features
@@ -16,6 +17,15 @@ Integrated Map: Displays a flat world map centered on West Bengal for easy locat
 AI-Powered Forecasting: Uses machine learning models to analyze power grid data and predict outages.
 
 User-Friendly Interface: Simple and intuitive UI for seamless interaction.
+
+# Installation and Setup
+1. Start in Google Colab
+Enable GPU for better performance.
+Install necessary dependencies.
+Upload any required files.
+Run your Flask backend code.
+Use ngrok to expose your Colab Flask server and get a public URL.
+Two api tokens would be required one open-router-api key of deepseek-r1-distill-llama-70b:free and ngrok token .
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLinthttps://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax rules.
 
