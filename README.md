@@ -20,23 +20,23 @@ User-Friendly Interface: Simple and intuitive UI for seamless interaction.
 
 ## Technology Stack
 
-###Frontend: React.js + Typescripte + Vite
-###Backend: Python (Flask)
-###Machine Learning: TensorFlow
-###Mapping Service: OpenStreetMap / Leaflet.js
+### Frontend: React.js + Typescripte + Vite
+### Backend: Python (Flask)
+### Machine Learning: TensorFlow
+### Mapping Service: OpenStreetMap / Leaflet.js
 
 ## Installation and Setup
 
-###Prerequisites
+### Prerequisites
 -Ensure you have the following installed:
     Node.js and npm
-###Steps:
-####1. Clone the repository:
+### Steps:
+#### 1. Clone the repository:
 ``` Terminal
 git clone https://github.com/yourusername/load-forecaster.git
 cd load-forecaster
 ```
-####2. Start in Google Colab
+#### 2. Start in Google Colab
 - Enable GPU for better performance.
 - Install necessary dependencies.
 - Upload any required files.
@@ -44,13 +44,13 @@ cd load-forecaster
 - Use **ngrok** to expose your Colab Flask server and get a public URL.
 - Two api tokens would be required one open-router-api key of deepseek-r1-distill-llama-70b:free and ngrok token .
 
-####3. Install frontend dependencies (if applicable):
+#### 3. Install frontend dependencies (if applicable):
 ``` Terminal
 npm install
 npm i react-leaflet
 npm run dev
 ```
-####4. Frontend Display Components
+#### 4. Frontend Display Components
 i) Navigation & Controls
 -Back to Landing Button (Top left): Allows users to return to the main dashboard.
 -Zoom Controls (Top left): + and - buttons for zooming in/out on the map.
@@ -72,8 +72,8 @@ iii) Data Sidebar (Right Panel)
   
 ![main](https://github.com/user-attachments/assets/38300449-7b87-4cc4-a414-f1996bbac1e0)
    
-##Usage
-###Why Use Load Forecaster?
+## Usage
+### Why Use Load Forecaster?
 -Power Grid Management: Helps utility companies optimize power distribution and prevent blackouts.
 -Disaster Preparedness: Provides early warnings for areas with high blackout risks.
 -Smart City Planning: Assists city planners in improving energy infrastructure.
@@ -86,12 +86,12 @@ iii) Data Sidebar (Right Panel)
 -Industries & Manufacturing Units to mitigate production losses due to power failures.
 -Smart Grids & IoT Systems to integrate predictive analytics for efficient energy use.
 
-##Future Improvements
+## Future Improvements
 - Integration with real-time power grid data.
 - Improved AI models for higher accuracy.
 - Enhanced UI with additional visualization tools.
 
-##License
+## License
 -This project is licensed under the MIT License.
 
 
