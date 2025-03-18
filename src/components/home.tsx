@@ -17,9 +17,7 @@ const Home: React.FC = () => {
     <div className="min-h-screen bg-slate-900">
       {!showMap && <LandingHero onTryNowClick={handleTryNowClick} />}
       {showMap && (
-        <WorldMapInterface isVisible={true} onClose={handleBackToLanding} selectedDate={""} onPredictionResult={function (data: any): void {
-          throw new Error("Function not implemented.");
-        } } />
+        <WorldMapInterface isVisible={true} onClose={handleBackToLanding} />
       )}
     </div>
   );

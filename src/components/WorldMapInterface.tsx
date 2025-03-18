@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DataSidebar from "./DataSidebar";
-import TimeControls from "./TimeControls";
+//import TimeControls from "./TimeControls";
 import { Button } from "./ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import {
@@ -337,16 +337,7 @@ const WorldMapInterface: React.FC<WorldMapInterfaceProps> = ({
           </motion.div>
         </div>
 
-        {/* Time controls */}
-        <motion.div className="p-4 border-t border-gray-200 dark:border-gray-800" variants={itemVariants}>
-          <TimeControls
-            isPlaying={isPlaying}
-            onPlay={handlePlay}
-            onPause={handlePause}
-            onTimeChange={handleTimeChange}
-            onSpeedChange={handleSpeedChange}
-          />
-        </motion.div>
+        
       </div>
     </motion.div>
   );

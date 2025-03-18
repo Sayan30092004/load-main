@@ -31,33 +31,41 @@ interface DataVisualizationProps {
   historicalData?: Array<{
     date: string;
     demand: number;
-    supply: number;
-    blackoutProbability: number;
   }>;
   forecastData?: Array<{
     date: string;
     demand: number;
-    supply: number;
-    blackoutProbability: number;
   }>;
 }
 
 const mockHistoricalData = [
-  { date: "2023-01", demand: 120, supply: 140, blackoutProbability: 0.02 },
-  { date: "2023-02", demand: 130, supply: 145, blackoutProbability: 0.03 },
-  { date: "2023-03", demand: 145, supply: 150, blackoutProbability: 0.04 },
-  { date: "2023-04", demand: 160, supply: 165, blackoutProbability: 0.05 },
-  { date: "2023-05", demand: 170, supply: 160, blackoutProbability: 0.08 },
-  { date: "2023-06", demand: 190, supply: 180, blackoutProbability: 0.12 },
+  { date: "January", demand: 120 },
+  { date: "February", demand: 130 },
+  { date: "March", demand: 145 },
+  { date: "April", demand: 160 },
+  { date: "May", demand: 170 },
+  { date: "June", demand: 190 },
+  { date: "July", demand: 210 },
+  { date: "August", demand: 205 },
+  { date: "September", demand: 185 },
+  { date: "October", demand: 165 },
+  { date: "November", demand: 150 },
+  { date: "December", demand: 140 },
 ];
 
 const mockForecastData = [
-  { date: "2023-07", demand: 195, supply: 185, blackoutProbability: 0.1 },
-  { date: "2023-08", demand: 200, supply: 190, blackoutProbability: 0.09 },
-  { date: "2023-09", demand: 185, supply: 195, blackoutProbability: 0.05 },
-  { date: "2023-10", demand: 175, supply: 190, blackoutProbability: 0.04 },
-  { date: "2023-11", demand: 165, supply: 185, blackoutProbability: 0.03 },
-  { date: "2023-12", demand: 155, supply: 180, blackoutProbability: 0.02 },
+  { date: "January", demand: 125 },
+  { date: "February", demand: 135 },
+  { date: "March", demand: 150 },
+  { date: "April", demand: 165 },
+  { date: "May", demand: 175 },
+  { date: "June", demand: 195 },
+  { date: "July", demand: 215 },
+  { date: "August", demand: 210 },
+  { date: "September", demand: 190 },
+  { date: "October", demand: 170 },
+  { date: "November", demand: 155 },
+  { date: "December", demand: 145 },
 ];
 
 const DataVisualization: React.FC<DataVisualizationProps> = ({
@@ -75,7 +83,7 @@ const DataVisualization: React.FC<DataVisualizationProps> = ({
       <Card className="border-0 shadow-none h-full">
         <CardHeader className="pb-2">
           <CardTitle className="text-lg font-medium">
-            {locationName} Energy Data -{" "}
+            {locationName} Monthly Load Demand -{" "}
             {dataType === "historical" ? "Historical" : "Forecast"}
           </CardTitle>
           <div className="flex justify-between items-center mt-2">
@@ -121,18 +129,7 @@ const DataVisualization: React.FC<DataVisualizationProps> = ({
                     stroke="#f97316"
                     strokeWidth={2}
                     activeDot={{ r: 8 }}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="supply"
-                    stroke="#3b82f6"
-                    strokeWidth={2}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="blackoutProbability"
-                    stroke="#ef4444"
-                    strokeWidth={2}
+                    name="Load Demand"
                   />
                 </LineChart>
               </ResponsiveContainer>
@@ -148,9 +145,7 @@ const DataVisualization: React.FC<DataVisualizationProps> = ({
                   <YAxis />
                   <Tooltip />
                   <Legend />
-                  <Bar dataKey="demand" fill="#f97316" />
-                  <Bar dataKey="supply" fill="#3b82f6" />
-                  <Bar dataKey="blackoutProbability" fill="#ef4444" />
+                  <Bar dataKey="demand" fill="#f97316" name="Load Demand" />
                 </BarChart>
               </ResponsiveContainer>
             )}
@@ -168,26 +163,10 @@ const DataVisualization: React.FC<DataVisualizationProps> = ({
                   <Area
                     type="monotone"
                     dataKey="demand"
-                    stackId="1"
                     stroke="#f97316"
                     fill="#f97316"
                     fillOpacity={0.6}
-                  />
-                  <Area
-                    type="monotone"
-                    dataKey="supply"
-                    stackId="2"
-                    stroke="#3b82f6"
-                    fill="#3b82f6"
-                    fillOpacity={0.6}
-                  />
-                  <Area
-                    type="monotone"
-                    dataKey="blackoutProbability"
-                    stackId="3"
-                    stroke="#ef4444"
-                    fill="#ef4444"
-                    fillOpacity={0.6}
+                    name="Load Demand"
                   />
                 </AreaChart>
               </ResponsiveContainer>
