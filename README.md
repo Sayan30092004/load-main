@@ -25,6 +25,10 @@ User-Friendly Interface: Simple and intuitive UI for seamless interaction.
  - Machine Learning: TensorFlow
  - Mapping Service: OpenStreetMap / Leaflet.js
 
+## Architectural Block Diagram
+
+![mermaid-flow-1x](https://github.com/user-attachments/assets/849c1bd4-dca4-4b13-9f2c-5c48329f33a1)
+
 ## Installation and Setup
 
 ### Prerequisites
