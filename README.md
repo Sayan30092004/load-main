@@ -20,10 +20,10 @@ User-Friendly Interface: Simple and intuitive UI for seamless interaction.
 
 ## Technology Stack
 
-### Frontend: React.js + Typescripte + Vite
-### Backend: Python (Flask)
-### Machine Learning: TensorFlow
-### Mapping Service: OpenStreetMap / Leaflet.js
+ Frontend: React.js + Typescripte + Vite
+ Backend: Python (Flask)
+ Machine Learning: TensorFlow
+ Mapping Service: OpenStreetMap / Leaflet.js
 
 ## Installation and Setup
 
