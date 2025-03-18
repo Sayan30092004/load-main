@@ -4,10 +4,12 @@ React + Typescripte + Vite
 # Overview
 
 Load Forecaster is a web-based application that predicts blackout probability for specific locations. It integrates a flat world map focused on West Bengal and uses AI-driven analysis to estimate the likelihood of power outages.
+![LP](https://github.com/user-attachments/assets/e9d07046-885c-42fc-b352-e614e29d99b9)
 
 # Features
 
-Blackout Prediction: Provides real-time probability estimates of blackouts for selected locations.
+Blackout Prediction: Provides real-time probability estimates of blackouts for selected loc
+ations.
 
 Integrated Map: Displays a flat world map centered on West Bengal for easy location selection.
 
