@@ -78,6 +78,56 @@ iii) Data Sidebar (Right Panel)
 ## Demo Video
 
 https://github.com/user-attachments/assets/13c94446-3bca-4c63-8260-6343ee2c14b6
+
+## Report on Synthetic Dataset and Blackout Chance Calculation
+### 1. Introduction
+This report outlines the methodology used to create the synthetic dataset for load forecasting and the formula applied to calculate blackout chances. The synthetic data was designed to reflect realistic energy consumption patterns and grid load variations, based on a combination of publicly available data, educated estimates, and domain-specific considerations.
+
+### 2. Considerations for Creating the Synthetic Dataset
+The synthetic dataset was generated to simulate real-world load demand data. The following key factors were considered:
+
+#### a) Historical Data and Educated Guesses
+- Data patterns and trends from publicly available sources were analyzed and incorporated.
+- Educated guesses were made to fill gaps and create realistic variability in load demand.
+
+#### b) Industrial Variables
+- Industrial demand was modeled based on sector-wise consumption patterns.
+- Peak operational hours and shifts in industrial activity were reflected in the data.
+
+#### c) Seasonal Factors
+- Seasonal changes in temperature, daylight hours, and weather conditions were factored in.
+- Higher energy consumption was modeled for summer and winter months due to heating and cooling needs.
+
+#### d) Operational Factors
+- Grid efficiency, line losses, and maintenance periods were incorporated.
+- Outages and infrastructure limitations were accounted for in the data.
+
+#### e) Load Demand Variability
+- Load demand was modeled to reflect daily and weekly variations.
+- Sudden spikes due to industrial activity or weather events were included.
+
+### 3. Formula for Blackout Chance Calculation
+The blackout chance was calculated using the following formula:
+
+\[
+P_{\text{blackout}} = \max\left(0, \frac{(D - C)}{D} \cdot F_{\text{season}} \cdot F_{\text{industrial}} \cdot F_{\text{operational}} \cdot 100\%\right)
+\]
+
+Where:
+- \( P_{\text{blackout}} \) = Probability of blackout (in percentage)
+- \( D \) = Load demand at a given time (MW)
+- \( C \) = Installed capacity (MW)
+- \( F_{\text{season}} \) = Seasonal adjustment factor (e.g., higher in summer/winter)
+- \( F_{\text{industrial}} \) = Industrial load factor (based on peak operation hours)
+- \( F_{\text{operational}} \) = Operational factor (reflecting grid efficiency, maintenance, etc.)
+
+#### Explanation:
+- If load demand exceeds installed capacity, the blackout chance increases.
+- Multiplying by seasonal, industrial, and operational factors adjusts the probability based on real-world constraints and fluctuations.
+- If load demand is below capacity, the blackout chance is zero.
+
+### 4. Conclusion
+The synthetic dataset was constructed to provide a realistic foundation for load forecasting by incorporating diverse real-world factors. The blackout probability formula reflects the dynamic nature of power grids, accounting for industrial activity, seasonal variations, and operational conditions.
    
 ## Usage
 ### Why Use Load Forecaster?
