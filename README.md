@@ -11,7 +11,6 @@ Load Forecaster is a web-based application that predicts blackout probability fo
 
 Blackout Prediction: Provides real-time probability estimates of blackouts for selected loc
 ations.
-
 Integrated Map: Displays a flat world map centered on West Bengal for easy location selection.
 
 AI-Powered Forecasting: Uses machine learning models to analyze power grid data and predict outages.
@@ -75,6 +74,10 @@ iii) Data Sidebar (Right Panel)
 - Graph: Month vs Load Demand
   
 ![main](https://github.com/user-attachments/assets/38300449-7b87-4cc4-a414-f1996bbac1e0)
+
+## Demo Video
+
+https://github.com/user-attachments/assets/13c94446-3bca-4c63-8260-6343ee2c14b6
    
 ## Usage
 ### Why Use Load Forecaster?
